@@ -1,0 +1,25 @@
+/*My app will be the siege engine database app*/
+
+/*List of all the types of seige engines*/
+CREATE TABLE siegeEngineTypes (id INTEGER PRIMARY KEY, name TEXT, size TEXT, dateInvented TEXT);
+
+INSERT INTO siegeEngineTypes VALUES (1, "Catapult", "Small", "400 BC");
+INSERT INTO siegeEngineTypes VALUES (2, "Trebuchet", "large", "400 BC");
+INSERT INTO siegeEngineTypes VALUES (3, "Ballista", "small", "400 BC");
+INSERT INTO siegeEngineTypes VALUES (4, "Battering Ram", "medium", "Unknown");
+INSERT INTO siegeEngineTypes VALUES (5, "Siege Tower", "Extra large", "1100 AD");
+INSERT INTO siegeEngineTypes VALUES (6, "Mangonel", "large", "400 BC");
+
+
+
+
+CREATE TABLE trebuchetList (id INTEGER PRIMARY KEY, type INTEGER, name TEXT, size TEXT, dateMade TEXT, shotsFired INTEGER);
+
+INSERT INTO trebuchetList VALUES (1, 2, "WarWolf", "largest", "1304 AD", "Unknown");
+
+
+
+
+
+SELECT * FROM siegeEngineTypes;
+SELECT * FROM trebuchetList;
